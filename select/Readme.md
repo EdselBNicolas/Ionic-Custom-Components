@@ -1,4 +1,4 @@
- multiple select component with limiter ~
+ MULTIPLE SELECT COMPONENT WITH LIMITER
   
  
  First, please apply changes in ionic component select.js              
