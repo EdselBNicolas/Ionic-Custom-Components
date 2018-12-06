@@ -1,0 +1,14 @@
+<!-- Generated template for the MultiSelectComponent component -->
+<ion-select 
+    [(ngModel)]="selectModel" 
+    [multiple]="true" 
+    [compareWith]="compareSelected"
+    (tap)="validateSelected()"
+    (ionCancel)="onCancel()">
+  <ion-option 
+    *ngFor="let item of selectArray" 
+    (ionSelect)="onSelectChanged($event)" 
+    [value]="item[selectField.value] ? item[selectField.value]: item[selectField.name]"> 
+    {{ item.name }} 
+</ion-option>
+</ion-select>
